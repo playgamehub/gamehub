@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sprachübersetzung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        
+        input[type="text"] {
+            width: 300px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <label for="inputText">Eingabe:</label>
+    <input type="text" id="inputText" onkeyup="translateText()">
+    
+    <label for="outputText">Übersetzung:</label>
+    <input type="text" id="outputText" disabled>
+    
+    <label for="languageSelect">Sprache wählen:</label>
+    <select id="languageSelect" onchange="translateText()">
+        <option value="en">Englisch</option>
+        <option value="es">Spanisch</option>
+        <option value="fr">Französisch</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italienisch</option>
+        <option value="pt">Portugiesisch</option>
+        <option value="ja">Japanisch</option>
+        <option value="ko">Koreanisch</option>
+        <option value="zh-CN">Chinesisch (vereinfacht)</option>
+        <option value="ru">Russisch</option>
+    </select>
+
+    <script>
+        function translateText() {
+            var inputText = document.getElementById("inputText").value;
+            var languageSelect = document.getElementById("languageSelect");
+            var outputText = document.getElementById("outputText");
+
+            var selectedLanguage = languageSelect.options[languageSelect.selectedIndex].value;
+
+            // Hier kannst du die Sprachübersetzungsfunktion einfügen
+            // Ich verwende hier das Google Translate API als Beispiel
+
+            // Simuliere die Übersetzung durch Einfügen der Eingabe in das Ausgabefeld
+            outputText.value = inputText;
+        }
+    </script>
+</body>
+</html>

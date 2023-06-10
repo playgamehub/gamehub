@@ -1,0 +1,346 @@
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4d79ff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-link:hover {
+    background-color: #346ad1;
+  }
+  
+  .button-link:active {
+    background-color: #204698;
+  }
+  
+  .button-link:visited {
+    color: #fff;
+  }
+  
+  .button-link:focus {
+    outline: none;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #eaf7ff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #43f46f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .cta-button:hover {
+    background-color: #0bc139;
+  }
+  
+  /* Game Section */
+  .game-section {
+    padding: 40px;
+  }
+  
+  .game-card {
+    display: inline-block;
+    margin-right: 20px;
+    width: 300px;
+  }
+  
+  .game-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+
+  body {
+    font-family: "Bell MT", serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Bell MT", serif;
+  }
+  
+  p {
+    font-family: "Bell MT", serif;
+  }
+  
+/* Globale Stile und Header-Stile */
+
+/* Navigation */
+#mainNav {
+    display: none; /* Die Navigation ist standardmäßig ausgeblendet */
+    background-color: #f2f2f2;
+    padding: 20px;
+    animation: slideIn 0.5s forwards; /* Füge die Animation hinzu */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%); /* Startposition außerhalb des Bildschirms */
+    }
+    to {
+      transform: translateX(0); /* Endposition, die Navigation wird eingeblendet */
+    }
+  }
+  
+  #mainNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #mainNav ul li {
+    margin-bottom: 10px;
+    opacity: 0; /* Startwert für die Opazität der Buttons */
+    animation: fadeIn 0.5s forwards; /* Füge die Animation für die Buttons hinzu */
+    animation-delay: 0.5s; /* Verzögerung für die Einblendung der Buttons */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Startwert, die Buttons sind unsichtbar */
+    }
+    to {
+      opacity: 1; /* Endwert, die Buttons werden sichtbar */
+    }
+  }
+  
+  /* Weichzeichnen für den restlichen Inhalt */
+  body:not(#mainNav) {
+    filter: blur(); /* Hinzufügen des Weichzeichnungs-Filters */
+  }
+  
+  /* JavaScript wird verwendet, um die Navigation einzufahren */
+
+  /* Globale Stile und Header-Stile */
+
+/* Navigation */
+#mainNav {
+    display: none; /* Die Navigation ist standardmäßig ausgeblendet */
+    background-color: #f2f2f2;
+    padding: 20px;
+    animation: slideIn 0.5s forwards; /* Füge die Animation hinzu */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%); /* Startposition außerhalb des Bildschirms */
+    }
+    to {
+      transform: translateX(0); /* Endposition, die Navigation wird eingeblendet */
+    }
+  }
+  
+  #mainNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #mainNav ul li {
+    margin-bottom: 10px;
+    opacity: 0; /* Startwert für die Opazität der Buttons */
+    animation: fadeIn 0.5s forwards; /* Füge die Animation für die Buttons hinzu */
+    animation-delay: 0.5s; /* Verzögerung für die Einblendung der Buttons */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Startwert, die Buttons sind unsichtbar */
+    }
+    to {
+      opacity: 1; /* Endwert, die Buttons werden sichtbar */
+    }
+  }
+  
+  /* Weichzeichnen für den restlichen Inhalt */
+  .blur {
+    filter: blur(4px); /* Hinzufügen des Weichzeichnungs-Filters */
+  }
+  
+  /* JavaScript wird verwendet, um die Navigation einzufahren */
+
+  /* Globale Stile und Header-Stile */
+
+/* Gemeinsame Stile für die Seiten */
+main {
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Stile spezifisch für die Community-Seite */
+.community-info {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Stile spezifisch für die Kontaktseite */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #004499;
+}
+
+/* Stile spezifisch für die 404-Seite */
+.not-found {
+  text-align: center;
+  padding: 50px;
+}
+
+.not-found h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.not-found p {
+  font-size: 18px;
+}
+
+.not-found a {
+  font-weight: bold;
+}
+
+/* Globale Stile und Header-Stile */
+
+/* Stile für die Navigationselemente */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #43f46f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #0bc139;
+}
+
+/* Klasse für linken Inhalt */
+.left-content {
+  float: left;
+  width: 30%;
+}
+
+/* Klasse für rechten Inhalt */
+.right-content {
+  float: right;
+  width: 30%;
+}
+
+/* Klasse für mittleren Inhalt */
+.center-content {
+  margin: 0 auto;
+  width: 40%;
+}
